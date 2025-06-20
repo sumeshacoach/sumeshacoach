@@ -5,16 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sumesha Wellness</title>
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #fdfbf7;
       color: #333;
     }
 
     header {
-      background: rgba(255, 255, 255, 0.95);
-      padding: 20px 40px;
+      background: #fff;
+      padding: 16px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -41,46 +46,47 @@
     }
 
     nav a {
-      margin-left: 24px;
+      margin-left: 20px;
       text-decoration: none;
       color: #333;
       font-weight: 500;
     }
 
     .hero {
-      background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)),
-        url('https://images.unsplash.com/photo-1588776814546-bc8984c8b4bb?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0,0,0,0.5)),
+        url('https://images.unsplash.com/photo-1576671081837-c21c718dbe3f?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
       color: #fff;
       text-align: center;
-      padding: 100px 30px;
+      padding: 120px 20px 100px;
     }
 
     .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
+      font-size: 42px;
+      margin-bottom: 16px;
     }
 
     .hero p {
-      font-size: 20px;
+      font-size: 18px;
       max-width: 700px;
       margin: 0 auto;
     }
 
     .section {
-      padding: 80px 40px;
+      padding: 70px 40px;
       text-align: center;
     }
 
     .section h2 {
       font-size: 32px;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
+      color: #5c4433;
     }
 
     .quote {
       font-size: 20px;
       font-style: italic;
       color: #6a5c4f;
-      margin-bottom: 40px;
+      margin-bottom: 32px;
     }
 
     .services {
@@ -116,7 +122,7 @@
     }
 
     .testimonials {
-      margin-top: 60px;
+      margin-top: 40px;
     }
 
     .testimonial {
@@ -137,7 +143,7 @@
     }
 
     .cta {
-      margin-top: 50px;
+      margin-top: 60px;
     }
 
     .cta button {
@@ -149,6 +155,7 @@
       border-radius: 6px;
       cursor: pointer;
       transition: background 0.3s;
+      margin-top: 20px;
     }
 
     .cta button:hover {
@@ -199,7 +206,7 @@
       <p>Work personally with a certified coach to build strength, stamina, and motivation. Perfect for all fitness levels.</p>
     </div>
     <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1600181953601-43b4dc1cf0f6?auto=format&fit=crop&w=800&q=80" alt="Online Therapy">
+      <img src="https://images.unsplash.com/photo-1588776814546-bc8984c8b4bb?auto=format&fit=crop&w=800&q=80" alt="Online Therapy">
       <h3>Online Therapy</h3>
       <p>Private video sessions to help you manage stress, emotions, relationships, and inner clarity — from anywhere.</p>
     </div>
