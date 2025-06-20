@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Session | Sumesha</title>
+  <style>
+    body { font-family: 'Georgia', serif; background: #fdfaf6; margin: 0; color: #2c2c2c; }
+    header, footer { background: #fff; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+    nav a { margin-left: 1rem; text-decoration: none; color: #333; font-weight: bold; }
+    nav a:hover { color: #b89b5e; }
+    main { padding: 2rem; max-width: 600px; margin: auto; }
+    form input, form textarea, form select {
+      width: 100%; padding: 0.5rem; margin: 0.5rem 0; border: 1px solid #ccc; border-radius: 4px;
+    }
+    form button {
+      background: #b89b5e; color: white; padding: 0.6rem 1.5rem; border: none; border-radius: 4px; cursor: pointer;
+    }
+    form button:hover {
+      background: #a38547;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sumesha</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="book.html">Book</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Book Your Session</h2>
+    <p>Fill out the form below to request a session. We’ll respond with confirmation and Google Meet details.</p>
+    <form action="mailto:sumesha.coach@gmail.com" method="post" enctype="text/plain">
+      <label>Your Name</label>
+      <input type="text" name="name" required />
+
+      <label>Email Address</label>
+      <input type="email" name="email" required />
+
+      <label>Select a Service</label>
+      <select name="service">
+        <option>1-on-1 Personal Training</option>
+        <option>Online Therapy</option>
+        <option>Customized Nutrition Plan</option>
+      </select>
+
+      <label>Preferred Date & Time</label>
+      <input type="text" name="datetime" placeholder="e.g. June 25, 10AM IST" required />
+
+      <label>Additional Message (Optional)</label>
+      <textarea name="message" rows="4" placeholder="Anything you’d like to share..."></textarea>
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </main>
+  <footer>
+    <p>© 2025 Sumesha. All rights reserved. | <a href="terms.html">Terms & Privacy</a></p>
+  </footer>
+</body>
+</html>
