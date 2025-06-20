@@ -35,17 +35,18 @@
     .brand {
       display: flex;
       align-items: center;
-      font-size: 1.8rem;
+      font-size: 2.2rem;
       font-weight: bold;
       color: #2c2c2c;
     }
     img.logo {
-      height: 50px;
+      height: 70px;
       border-radius: 50%;
-      margin-right: 10px;
+      margin-right: 15px;
       vertical-align: middle;
     }
     .hero {
+      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -53,8 +54,21 @@
       height: 100vh;
       text-align: center;
       padding: 2rem;
-      background: url('https://images.unsplash.com/photo-1517430816045-df4b7de11d1f') center/cover no-repeat;
       color: white;
+      background: url('https://images.unsplash.com/photo-1517430816045-df4b7de11d1f') center/cover no-repeat;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+    .hero h1, .hero p {
+      position: relative;
+      z-index: 2;
     }
     .hero h1 {
       font-size: 3.5rem;
@@ -83,17 +97,29 @@
       border-left: 4px solid #b89b5e;
       margin: 2rem 0;
     }
-    .services {
+    .services, .testimonials {
       display: flex;
       flex-wrap: wrap;
       gap: 2rem;
     }
-    .service {
+    .service, .testimonial {
       flex: 1 1 30%;
       background: #fff;
       padding: 1rem;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .service img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .testimonial p {
+      font-style: italic;
+    }
+    .testimonial h4 {
+      margin-top: 0.5rem;
+      font-weight: bold;
     }
     .cta {
       text-align: center;
@@ -156,24 +182,40 @@
     </section>
 
     <section>
-      <h2>Client Testimonial</h2>
-      <p class="quote">“Eesha guided me to rebuild my confidence, health, and happiness. It’s a life I love waking up to.”</p>
+      <h2>Client Testimonials</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          <p>“Eesha helped me feel confident in my skin again. The workouts and check-ins were exactly what I needed.”</p>
+          <h4>— Riya Shah</h4>
+        </div>
+        <div class="testimonial">
+          <p>“Her online therapy sessions helped me overcome anxiety and feel emotionally stable. Highly recommend!”</p>
+          <h4>— Aanya Kapoor</h4>
+        </div>
+        <div class="testimonial">
+          <p>“Simple, real and honest coaching. I lost 7kg and gained self-worth. So grateful!”</p>
+          <h4>— Sarah Mendes</h4>
+        </div>
+      </div>
     </section>
 
     <section>
       <h2>Explore Our Services</h2>
       <div class="services">
         <div class="service">
+          <img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0642" alt="Training">
           <h3>1-on-1 Training</h3>
           <p>Personalized fitness sessions, whether you're starting your journey or upgrading your routine. Move at your own pace.</p>
           <a href="services.html">Learn More</a>
         </div>
         <div class="service">
+          <img src="https://images.unsplash.com/photo-1600180758890-d72bd36c940c" alt="Therapy">
           <h3>Online Therapy</h3>
           <p>Confidential therapy sessions to manage stress, emotions, and self-awareness — from wherever you are.</p>
           <a href="services.html">Learn More</a>
         </div>
         <div class="service">
+          <img src="https://images.unsplash.com/photo-1556912994-1fb3608e7ed7" alt="Nutrition">
           <h3>Nutrition Planning</h3>
           <p>Balanced, sustainable food plans that work with your goals — not against them. Simple changes, lasting results.</p>
           <a href="services.html">Learn More</a>
