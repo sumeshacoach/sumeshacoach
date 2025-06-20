@@ -2,240 +2,175 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sumesha Wellness | Transform Your Life</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sumesha Wellness</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #fdfaf6;
-      color: #2c2c2c;
-      line-height: 1.6;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f8f7f4;
+      color: #333;
     }
-    header, footer {
-      background: #fff;
-      padding: 1rem 2rem;
+
+    header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      padding: 20px 40px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 60px;
+      margin-right: 12px;
+    }
+
     nav a {
-      margin-left: 1rem;
+      margin-left: 24px;
       text-decoration: none;
       color: #333;
       font-weight: 500;
     }
-    nav a:hover {
-      color: #b89b5e;
-    }
-    .brand {
-      display: flex;
-      align-items: center;
-      font-size: 2.2rem;
-      font-weight: bold;
-      color: #2c2c2c;
-    }
-    img.logo {
-      height: 70px;
-      border-radius: 50%;
-      margin-right: 15px;
-      vertical-align: middle;
-    }
+
     .hero {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
       text-align: center;
-      padding: 2rem;
-      color: white;
-      background: url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      padding: 80px 30px;
+      background: url('https://images.unsplash.com/photo-1601582585767-c6f3b5c6cc75?auto=format&fit=crop&w=1400&q=80') no-repeat center/cover;
+      color: #fff;
     }
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.5);
-      z-index: 1;
-    }
-    .hero h1, .hero p {
-      position: relative;
-      z-index: 2;
-    }
+
     .hero h1 {
-      font-size: 3.5rem;
-      max-width: 800px;
+      font-size: 48px;
+      margin-bottom: 16px;
     }
+
     .hero p {
-      font-size: 1.5rem;
-      margin-top: 1rem;
+      font-size: 20px;
+      margin-bottom: 32px;
     }
-    main {
-      max-width: 1100px;
-      margin: auto;
-      padding: 3rem 1rem;
+
+    .section {
+      padding: 60px 40px;
+      text-align: center;
     }
-    section {
-      margin: 4rem 0;
-    }
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    .quote {
-      font-style: italic;
-      background: #f9f5ec;
-      padding: 1rem;
-      border-left: 4px solid #b89b5e;
-      margin: 2rem 0;
-    }
-    .services, .testimonials {
+
+    .services {
       display: flex;
+      justify-content: space-around;
       flex-wrap: wrap;
-      gap: 2rem;
+      margin-top: 30px;
     }
-    .service, .testimonial {
-      flex: 1 1 30%;
+
+    .service-card {
       background: #fff;
-      padding: 1rem;
+      padding: 20px;
+      width: 300px;
+      margin: 20px;
       border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-    .service img {
-      width: 100%;
-      border-radius: 8px;
+
+    .service-card img {
+      height: 80px;
       margin-bottom: 10px;
     }
-    .testimonial p {
-      font-style: italic;
+
+    .service-card h3 {
+      margin: 10px 0;
     }
-    .testimonial h4 {
-      margin-top: 0.5rem;
-      font-weight: bold;
-    }
-    .cta {
-      text-align: center;
-      margin-top: 3rem;
-    }
-    .cta a {
-      background: #b89b5e;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 4px;
+
+    .service-card a {
+      color: #907060;
       text-decoration: none;
       font-weight: bold;
     }
-    .cta a:hover {
-      background: #a0844e;
+
+    .book-cta {
+      margin-top: 40px;
     }
+
+    .book-cta button {
+      background-color: #907060;
+      border: none;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
     footer {
-      background: #fff;
-      padding: 2rem 1rem;
+      background: #e5e2dc;
+      padding: 20px;
       text-align: center;
-      font-size: 0.9rem;
-      box-shadow: 0 -1px 4px rgba(0,0,0,0.05);
-      margin-top: 5rem;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <div class="brand">
-      <img src="logo.png" alt="Sumesha Logo" class="logo" />
-      Sumesha
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Sumesha Logo" />
+    <h2>Sumesha</h2>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="book.html">Book</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Transform Your Lifestyle</h1>
+  <p>Personal coaching for health, fitness, and emotional wellness — wherever you are.</p>
+</section>
+
+<section class="section">
+  <h2>Our Services</h2>
+  <div class="services">
+
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Training" />
+      <h3>1-on-1 Training</h3>
+      <p>Personalized fitness sessions, whether you're starting your journey or upgrading your routine. Move at your own pace.</p>
+      <a href="services.html">Learn More</a>
     </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="book.html">Book</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h1>Transform Your Life with Sumesha Wellness</h1>
-    <p>Guiding you to a balanced, healthy lifestyle — body, mind, and soul.</p>
-  </section>
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2721/2721296.png" alt="Therapy" />
+      <h3>Online Therapy</h3>
+      <p>Confidential therapy sessions to manage stress, emotions, and self-awareness — from wherever you are.</p>
+      <a href="services.html">Learn More</a>
+    </div>
 
-  <main>
-    <section>
-      <h2>Our Coaching Philosophy</h2>
-      <p>At Sumesha Wellness, we believe transformation comes from consistency — not extremes. With over 1500 international clients, our goal is to make well-being accessible and personalized. Through mindful movement, mental clarity, and nutritious living, we help you reach the best version of yourself. Age doesn’t matter — everyone deserves to feel empowered and confident.</p>
-      <div class="quote">“Change doesn’t require perfection. Just progress.”</div>
-    </section>
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3514/3514107.png" alt="Nutrition" />
+      <h3>Nutrition Planning</h3>
+      <p>Balanced, sustainable food plans that work with your goals — not against them. Simple changes, lasting results.</p>
+      <a href="services.html">Learn More</a>
+    </div>
 
-    <section>
-      <h2>Why Choose Sumesha?</h2>
-      <ul>
-        <li>✔️ Over 1500+ international clients served</li>
-        <li>✔️ Personalized coaching for all ages and fitness levels</li>
-        <li>✔️ Affordable pricing with real, lasting outcomes</li>
-        <li>✔️ Support for emotional, physical, and mental health</li>
-      </ul>
-    </section>
+  </div>
 
-    <section>
-      <h2>Client Testimonials</h2>
-      <div class="testimonials">
-        <div class="testimonial">
-          <p>“Eesha helped me feel confident in my skin again. The workouts and check-ins were exactly what I needed.”</p>
-          <h4>— Riya Shah</h4>
-        </div>
-        <div class="testimonial">
-          <p>“Her online therapy sessions helped me overcome anxiety and feel emotionally stable. Highly recommend!”</p>
-          <h4>— Aanya Kapoor</h4>
-        </div>
-        <div class="testimonial">
-          <p>“Simple, real and honest coaching. I lost 7kg and gained self-worth. So grateful!”</p>
-          <h4>— Sarah Mendes</h4>
-        </div>
-      </div>
-    </section>
+  <div class="book-cta">
+    <h2>Start Your Journey Today</h2>
+    <p>Book a session and take the first step toward a healthier, more fulfilled life.</p>
+    <a href="book.html"><button>Book Now</button></a>
+  </div>
+</section>
 
-    <section>
-      <h2>Explore Our Services</h2>
-      <div class="services">
-        <div class="service">
-          <img src="https://images.unsplash.com/photo-1554306274-f23873e7b61b?auto=format&fit=crop&w=800&q=60" alt="Training">
-          <h3>1-on-1 Training</h3>
-          <p>Personalized fitness sessions, whether you're starting your journey or upgrading your routine. Move at your own pace.</p>
-          <a href="services.html">Learn More</a>
-        </div>
-        <div class="service">
-          <img src="https://images.unsplash.com/photo-1588776814546-ec7d3d49c1ce?auto=format&fit=crop&w=800&q=60" alt="Therapy">
-          <h3>Online Therapy</h3>
-          <p>Confidential therapy sessions to manage stress, emotions, and self-awareness — from wherever you are.</p>
-          <a href="services.html">Learn More</a>
-        </div>
-        <div class="service">
-          <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c49?auto=format&fit=crop&w=800&q=60" alt="Nutrition">
-          <h3>Nutrition Planning</h3>
-          <p>Balanced, sustainable food plans that work with your goals — not against them. Simple changes, lasting results.</p>
-          <a href="services.html">Learn More</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <h2>Start Your Journey Today</h2>
-      <p>Book a session and take the first step toward a healthier, more fulfilled life.</p>
-      <a href="book.html">Book Now</a>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Sumesha Wellness. All rights reserved. | <a href="terms.html">Terms & Privacy</a></p>
-  </footer>
+<footer>
+  &copy; 2025 Sumesha Wellness | All rights reserved.
+</footer>
 
 </body>
 </html>
