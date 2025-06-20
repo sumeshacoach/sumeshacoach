@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sumesha Wellness | Transform Your Life</title>
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Segoe UI', sans-serif;
-      margin: 0;
       background: #fdfaf6;
       color: #2c2c2c;
       line-height: 1.6;
@@ -32,27 +32,42 @@
     nav a:hover {
       color: #b89b5e;
     }
-    main {
-      max-width: 1100px;
-      margin: auto;
-      padding: 2rem;
+    .brand {
+      display: flex;
+      align-items: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #2c2c2c;
+    }
+    img.logo {
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+      vertical-align: middle;
     }
     .hero {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
+      height: 100vh;
       text-align: center;
-      padding: 4rem 1rem;
+      padding: 2rem;
       background: url('https://images.unsplash.com/photo-1517430816045-df4b7de11d1f') center/cover no-repeat;
       color: white;
     }
     .hero h1 {
-      font-size: 3rem;
-      margin: 0;
+      font-size: 3.5rem;
+      max-width: 800px;
     }
     .hero p {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       margin-top: 1rem;
+    }
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3rem 1rem;
     }
     section {
       margin: 4rem 0;
@@ -70,11 +85,11 @@
     }
     .services {
       display: flex;
-      gap: 2rem;
       flex-wrap: wrap;
+      gap: 2rem;
     }
     .service {
-      flex: 1;
+      flex: 1 1 30%;
       background: #fff;
       padding: 1rem;
       border-radius: 8px;
@@ -93,26 +108,17 @@
       font-weight: bold;
     }
     footer {
+      background: #fff;
+      padding: 2rem 1rem;
       text-align: center;
       font-size: 0.9rem;
-      margin-top: 2rem;
-    }
-    img.logo {
-      height: 50px;
-      border-radius: 50%;
-      margin-right: 10px;
-      vertical-align: middle;
-    }
-    .brand {
-      display: flex;
-      align-items: center;
-      font-size: 1.8rem;
-      font-weight: bold;
-      color: #2c2c2c;
+      box-shadow: 0 -1px 4px rgba(0,0,0,0.05);
+      margin-top: 5rem;
     }
   </style>
 </head>
 <body>
+
   <header>
     <div class="brand">
       <img src="logo.png" alt="Sumesha Logo" class="logo" />
@@ -127,16 +133,16 @@
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Transform Your Life with Sumesha Wellness</h1>
-      <p>Simple, powerful coaching for mind, body, and soul.</p>
-    </section>
+  <section class="hero">
+    <h1>Transform Your Life with Sumesha Wellness</h1>
+    <p>Guiding you to a balanced, healthy lifestyle — body, mind, and soul.</p>
+  </section>
 
+  <main>
     <section>
-      <h2>Our Philosophy</h2>
-      <p>At Sumesha Wellness, we believe that lasting lifestyle change doesn't require extremes. Through small, mindful shifts in habits and mindset, anyone can reach their best version — physically, emotionally, and mentally. Our mission is to make wellness simple, personal, and affordable.</p>
-      <div class="quote">"Small daily improvements are the key to staggering long-term results."</div>
+      <h2>Our Coaching Philosophy</h2>
+      <p>At Sumesha Wellness, we believe transformation comes from consistency — not extremes. With over 1500 international clients, our goal is to make well-being accessible and personalized. Through mindful movement, mental clarity, and nutritious living, we help you reach the best version of yourself. Age doesn’t matter — everyone deserves to feel empowered and confident.</p>
+      <div class="quote">“Change doesn’t require perfection. Just progress.”</div>
     </section>
 
     <section>
@@ -145,44 +151,46 @@
         <li>✔️ Over 1500+ international clients served</li>
         <li>✔️ Personalized coaching for all ages and fitness levels</li>
         <li>✔️ Affordable pricing with real, lasting outcomes</li>
-        <li>✔️ Focus on emotional, physical, and mental wellbeing</li>
+        <li>✔️ Support for emotional, physical, and mental health</li>
       </ul>
     </section>
 
     <section>
-      <h2>Client Success</h2>
-      <p class="quote">“Working with Sumesha changed my life. I feel stronger, happier, and more confident than ever before.”</p>
+      <h2>Client Testimonial</h2>
+      <p class="quote">“Eesha guided me to rebuild my confidence, health, and happiness. It’s a life I love waking up to.”</p>
     </section>
 
     <section>
-      <h2>Our Services</h2>
+      <h2>Explore Our Services</h2>
       <div class="services">
         <div class="service">
-          <h3>1-on-1 Personal Training</h3>
-          <p>Tailored fitness sessions built around your goals, pace, and lifestyle. Ideal for beginners to advanced levels.</p>
+          <h3>1-on-1 Training</h3>
+          <p>Personalized fitness sessions, whether you're starting your journey or upgrading your routine. Move at your own pace.</p>
           <a href="services.html">Learn More</a>
         </div>
         <div class="service">
           <h3>Online Therapy</h3>
-          <p>Emotional support and mental clarity through compassionate, guided sessions online. Feel heard and empowered.</p>
+          <p>Confidential therapy sessions to manage stress, emotions, and self-awareness — from wherever you are.</p>
           <a href="services.html">Learn More</a>
         </div>
         <div class="service">
           <h3>Nutrition Planning</h3>
-          <p>Simple, sustainable meal plans aligned with your wellness goals. No crash diets — just balance and nourishment.</p>
+          <p>Balanced, sustainable food plans that work with your goals — not against them. Simple changes, lasting results.</p>
           <a href="services.html">Learn More</a>
         </div>
       </div>
     </section>
 
     <section class="cta">
-      <h2>Ready to begin your transformation?</h2>
-      <a href="book.html">Book a Session</a>
+      <h2>Start Your Journey Today</h2>
+      <p>Book a session and take the first step toward a healthier, more fulfilled life.</p>
+      <a href="book.html">Book Now</a>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Sumesha. All rights reserved. | <a href="terms.html">Terms & Privacy</a></p>
+    <p>© 2025 Sumesha Wellness. All rights reserved. | <a href="terms.html">Terms & Privacy</a></p>
   </footer>
+
 </body>
 </html>
