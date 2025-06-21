@@ -24,9 +24,18 @@
       top: 0;
       z-index: 1000;
     }
-    nav h1 {
-      font-size: 26px;
-      margin: 0;
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+    .logo-container img {
+      height: 40px;
+      margin-right: 12px;
+    }
+    .logo-container span {
+      font-size: 24px;
+      font-weight: 700;
+      color: #333;
     }
     nav ul {
       list-style: none;
@@ -44,18 +53,18 @@
     }
     header {
       background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
-        url('https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+        url('https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
       color: white;
       padding: 100px 20px 80px;
       text-align: center;
     }
     header h2 {
-      font-size: 46px;
-      margin-bottom: 10px;
+      font-size: 48px;
+      margin-bottom: 15px;
     }
     header p {
       font-size: 20px;
-      max-width: 600px;
+      max-width: 700px;
       margin: auto;
     }
     section {
@@ -105,13 +114,17 @@
       color: white;
       text-align: center;
       padding: 20px;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
 
   <nav>
-    <h1>Sumesha</h1>
+    <div class="logo-container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/480px-No_image_available.svg.png" alt="Sumesha Logo">
+      <span>Sumesha</span>
+    </div>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -122,13 +135,13 @@
 
   <header>
     <h2>Transform Your Life with Sumesha</h2>
-    <p>Where fitness, therapy, and wellness come together for your lifestyle revolution.</p>
+    <p>Where fitness, therapy, and wellness come together to reshape your lifestyle into something powerful, sustainable, and joyful.</p>
   </header>
 
   <section>
     <h3>Why Choose Sumesha?</h3>
     <p style="text-align: center; max-width: 750px; margin: auto;">
-      With 1500+ international clients, Sumesha Wellness empowers people to achieve balance through emotional, physical, and mental health — all at an affordable price.
+      With 1500+ international clients, Sumesha Wellness empowers people of all ages to achieve balance through emotional, physical, and mental health — all at an affordable price.
     </p>
   </section>
 
@@ -136,19 +149,19 @@
     <h3>Our Services</h3>
     <div class="services">
       <div class="service">
-        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc01f?auto=format&fit=crop&w=1470&q=80" alt="Training"/>
+        <img src="https://images.unsplash.com/photo-1583454110551-21df2a9c8eaf?auto=format&fit=crop&w=870&q=80" alt="1-on-1 Training"/>
         <h4>1-on-1 Training</h4>
-        <p>Certified personal training to build strength, stamina, and confidence — at your pace.</p>
+        <p>Personal coaching designed to help you build strength, improve endurance, and stay motivated with customized workout routines.</p>
       </div>
       <div class="service">
-        <img src="https://images.unsplash.com/photo-1600195077073-dc8f9a6343d1?auto=format&fit=crop&w=1470&q=80" alt="Online Therapy"/>
+        <img src="https://images.unsplash.com/photo-1613982732618-f94b3a6fdd48?auto=format&fit=crop&w=870&q=80" alt="Online Therapy"/>
         <h4>Online Therapy</h4>
-        <p>Confidential support for stress, clarity, relationships, and emotional wellbeing — anytime, anywhere.</p>
+        <p>Confidential, supportive sessions to help manage stress, relationships, and emotional well-being through structured guidance.</p>
       </div>
       <div class="service">
-        <img src="https://images.unsplash.com/photo-1510626176961-4bfb7f1f3b41?auto=format&fit=crop&w=1470&q=80" alt="Nutrition"/>
+        <img src="https://images.unsplash.com/photo-1510626176961-4bfb7f1f3b41?auto=format&fit=crop&w=870&q=80" alt="Nutrition Planning"/>
         <h4>Nutrition Planning</h4>
-        <p>Simple, sustainable meal plans tailored to your goals — no crash diets, just results.</p>
+        <p>Holistic nutrition plans based on your lifestyle and goals. No crash diets — just balanced eating that fits you.</p>
       </div>
     </div>
   </section>
@@ -156,15 +169,22 @@
   <section>
     <h3>Client Testimonials</h3>
     <div class="testimonials">
-      <div class="testimonial"><p>"Finally, a program that understood me. Simple, effective, and supportive." <br>– Aditi S.</p></div>
-      <div class="testimonial"><p>"Training with Eesha changed my life. My confidence is at 100%!" <br>– Krisha M.</p></div>
-      <div class="testimonial"><p>"Nutrition tips are super easy to follow. I feel better every day." <br>– Zayn T.</p></div>
+      <div class="testimonial"><p>"I saw major improvements both mentally and physically within a month. Life-changing support!" <br>– Krisha M.</p></div>
+      <div class="testimonial"><p>"Eesha really knows how to motivate and guide. She’s one of a kind!" <br>– Aditi S.</p></div>
+      <div class="testimonial"><p>"Highly professional and heart-centered coaching. Forever grateful!" <br>– Nikhil R.</p></div>
     </div>
+  </section>
+
+  <section>
+    <h3>Our Mission</h3>
+    <p style="text-align: center; max-width: 800px; margin: auto;">
+      At Sumesha Wellness, our mission is to simplify the journey to health by combining every essential element — fitness, mental clarity, therapy, and nutrition — into one structured yet flexible system. We believe that achieving your dream lifestyle doesn’t require extreme changes, but the right plan that fits YOU. Every person is unique, and our programs are built to honor that uniqueness while helping you thrive.
+    </p>
   </section>
 
   <section class="cta">
     <h3>Start Your Journey Today</h3>
-    <p>Take the first step toward your best self. Sessions available worldwide.</p>
+    <p>Book a session and take the first step toward your healthiest, happiest self.</p>
     <a href="book.html"><button>Book Now</button></a>
   </section>
 
