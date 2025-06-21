@@ -1,41 +1,129 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About | Sumesha</title>
+  <title>About – Sumesha Wellness</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Georgia', serif; background: #fdfaf6; margin: 0; color: #2c2c2c; }
-    header, footer { background: #fff; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
-    nav a { margin-left: 1rem; text-decoration: none; color: #333; font-weight: bold; }
-    nav a:hover { color: #b89b5e; }
-    main { padding: 2rem; max-width: 900px; margin: auto; }
-    h1, h2 { color: #2c2c2c; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 60px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 60px;
+      margin-right: 15px;
+    }
+    .logo h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      color: #5C5470;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 30px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 60px;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #5C5470;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .section-image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
+    }
+    @media(max-width: 768px) {
+      nav a { margin-left: 15px; font-size: 14px; }
+    }
   </style>
 </head>
+
 <body>
- <header>
-  <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
-    <img src="logo.png" alt="Sumesha Logo" style="height: 40px; margin-right: 10px;" />
-    <span style="font-size: 1.5rem; font-weight: bold; color: #2c2c2c;">Sumesha</span>
-  </a>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="book.html">Book</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-  <main>
-    <h2>About Eesha Salvi</h2>
-    <p><strong>Eesha Salvi</strong> is the founder and heart behind <strong>Sumesha</strong>. With over 1500 international clients, she has spent years guiding people toward a balanced and fulfilling lifestyle—physically, mentally, and emotionally.</p>
-    <p>Eesha is not just a certified lifestyle coach; she is a compassionate professional who deeply understands the importance of creating change that feels achievable. Her approach is rooted in simplicity, support, and sustainable transformation. Whether through training, therapy, or nutrition, Eesha’s mission is to help individuals become the best version of themselves.</p>
-    <p>What makes her truly exceptional is not just her qualifications but her empathy, vision, and unwavering dedication to those she serves. She believes that everyone deserves to feel good, live fully, and thrive—and she has dedicated her life to making that possible for people across the world.</p>
-    <p><em>Leading you to the best lifestyle is not just a goal; it's our mission.</em></p>
-  </main>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Sumesha Logo">
+      <h1>Sumesha</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="book.html">Book</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section>
+      <img src="https://images.unsplash.com/photo-1520975917684-79c7d599bc1b?auto=format&fit=crop&w=1050&q=80" alt="Coaching" class="section-image">
+      <h2>About Me</h2>
+      <p>Hi, I’m <strong>Eesha Salvi</strong>, the founder and coach behind Sumesha Wellness. I'm a certified lifestyle coach with a passion for guiding people toward their best lives — physically, mentally, and emotionally.</p>
+      <p>With over <strong>1,500 international clients</strong>, I’ve dedicated my life to helping individuals transform their routines, shift their mindset, and step into the healthiest version of themselves. At Sumesha, our goal is simple: support real people in making real changes, one step at a time.</p>
+    </section>
+
+    <section>
+      <img src="https://images.unsplash.com/photo-1611078489935-6a017c3837e5?auto=format&fit=crop&w=1050&q=80" alt="Why Choose Me" class="section-image">
+      <h2>Why Choose Me?</h2>
+      <p>I understand that everyone’s journey is different. That’s why I provide coaching that’s not just about workouts or diets — it’s about understanding your lifestyle, goals, and challenges.</p>
+      <p>What sets me apart is the blend of global experience, deep empathy, and practical strategies. I’ve worked with diverse people from different cultures and age groups, and I bring that knowledge into every session.</p>
+    </section>
+
+    <section>
+      <img src="https://images.unsplash.com/photo-1558981403-c5f9891d68d0?auto=format&fit=crop&w=1050&q=80" alt="My Journey" class="section-image">
+      <h2>My Journey</h2>
+      <p>My fitness journey began in <strong>2019</strong> when I earned my international Zumba instructor license. From there, I pursued certification as a personal trainer and started applying my knowledge by working on luxury cruise ships around the world.</p>
+      <p>Traveling the globe, I realized that fitness isn't just about movement — it’s about purpose, mindset, and emotional strength. I saw how powerful it is when people believe in themselves — and I knew I had to help more people find that power within.</p>
+      <p>So I shifted my focus to my true calling: creating accessible wellness solutions for anyone who wants to feel better, look better, and live stronger. Today, through Sumesha Wellness, I work for the people — and with the people — to transform lifestyles in a sustainable, joyful, and meaningful way.</p>
+    </section>
+  </div>
+
   <footer>
-    <p>© 2025 Sumesha. All rights reserved. | <a href="terms.html">Terms & Privacy</a></p>
+    &copy; 2025 Sumesha Wellness | All rights reserved.
   </footer>
 </body>
 </html>
