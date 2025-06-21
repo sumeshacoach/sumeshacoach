@@ -13,30 +13,37 @@
       color: #333;
       line-height: 1.9;
     }
+
     header {
       background: white;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 25px 60px;
+      padding: 20px 60px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
       position: sticky;
       top: 0;
       z-index: 1000;
     }
+
     .logo {
       display: flex;
       align-items: center;
     }
+
     .logo img {
       height: 60px;
+      width: 60px;
+      border-radius: 50%; /* Matching index logo corner style */
       margin-right: 15px;
     }
+
     .logo h1 {
       font-family: 'Playfair Display', serif;
       font-size: 34px;
       color: #5C5470;
     }
+
     nav a {
       text-decoration: none;
       color: #333;
@@ -44,34 +51,53 @@
       font-weight: 600;
       font-size: 16px;
     }
+
     .container {
-      max-width: 1000px;
-      margin: 50px auto;
+      max-width: 1100px;
+      margin: 60px auto;
       padding: 0 25px;
     }
-    section {
-      margin-bottom: 70px;
+
+    .service-box {
+      background: #f9f8f6;
+      padding: 40px 30px;
+      border-left: 6px solid #a192c2;
+      border-radius: 10px;
+      margin-bottom: 50px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+      transition: 0.3s ease;
     }
+
+    .service-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    }
+
     h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 32px;
+      font-size: 28px;
       margin-bottom: 20px;
       color: #5C5470;
     }
+
     p {
-      font-size: 18px;
-      margin-bottom: 25px;
+      font-size: 17px;
+      margin-bottom: 18px;
       text-align: justify;
     }
+
     footer {
       background: #333;
       color: white;
       text-align: center;
       padding: 20px 0;
       font-size: 14px;
+      margin-top: 60px;
     }
+
     @media(max-width: 768px) {
       nav a { margin-left: 15px; font-size: 14px; }
+      header { padding: 15px 30px; }
     }
   </style>
 </head>
@@ -92,26 +118,28 @@
   </header>
 
   <div class="container">
-    <section>
+    
+    <div class="service-box">
       <h2>1-on-1 Personal Training</h2>
-      <p>Transform your body and mind with customized, one-on-one personal training sessions designed just for you. Whether you're a beginner or someone with years of experience, I adapt each session to meet your goals, pace, and physical needs. From building strength and endurance to improving flexibility and posture, we’ll build a plan that works with your lifestyle and supports your long-term wellness.</p>
-      <p>My expertise includes a variety of formats such as <strong>Pilates, yoga, strength training, and HIIT</strong>. This means we can tailor your sessions based on what your body truly needs—whether it's high-energy performance training or calm, restorative movement. With my guidance, every workout becomes a step toward becoming the healthiest, most confident version of yourself.</p>
-      <p>What makes me different? Clients often say they’ve never felt more understood, supported, and motivated. I don't just train bodies—I empower people. This isn’t a generic program. It’s a personal transformation journey with someone who truly cares about your progress. That’s the Sumesha difference.</p>
-    </section>
+      <p>Experience the power of transformation with personalized, one-on-one coaching that fits your body, schedule, and goals. Whether you're starting from scratch or upgrading your fitness level, I design every session to empower you with confidence, clarity, and strength.</p>
+      <p>With expertise in <strong>Pilates, Yoga, Strength Training, and HIIT</strong>, I guide you through movement that enhances flexibility, tones your body, builds endurance, and relieves stress. You’re never doing the same boring routine — every session is crafted with care, energy, and a deep understanding of your journey.</p>
+      <p>My coaching goes beyond exercise — it’s motivation, mindset, and mentorship. Clients say I bring something different: a rare combination of empathy, insight, and discipline. Together, we’ll build habits that last and create results that feel amazing. I don’t just train — I inspire transformation.</p>
+    </div>
 
-    <section>
+    <div class="service-box">
       <h2>Online Therapy Sessions</h2>
-      <p>Emotional and mental wellness are just as important as physical health. My online therapy sessions offer a safe, confidential space where you can express, reflect, and grow. Whether you're feeling overwhelmed, stuck, or simply need someone to talk to, I’m here to support you with tools, perspective, and compassion.</p>
-      <p>These sessions are tailored to your emotional needs, and designed to help you build inner resilience, better manage stress, and find clarity. With warmth and honesty, we’ll work through limiting beliefs, negative patterns, and help you rediscover the strength within. This is about real healing—and real progress.</p>
-      <p>Clients describe my approach as calming, insightful, and deeply grounding. Even if you’ve never tried therapy before, I’ll guide you gently through the process so you feel empowered and safe. You don’t have to carry your emotional weight alone. Let’s heal and grow—together.</p>
-    </section>
+      <p>Your emotional well-being deserves just as much care as your physical health. My online therapy sessions are designed to help you navigate life’s challenges with calm, clarity, and strength. Whether you're going through stress, anxiety, confusion, or emotional burnout, I’m here to listen, guide, and support you — with no judgment.</p>
+      <p>Through structured conversations and reflective guidance, we’ll uncover blocks, reframe your thinking, and reconnect you with your inner strength. I use compassionate methods that blend psychology and coaching so that you don’t just feel better — you feel equipped to move forward with peace.</p>
+      <p>Clients often say that even in our first session, they feel at home with me. That safety, connection, and care is what makes my therapy space so unique. I’m not just a therapist — I’m your safe place, cheerleader, and trusted guide.</p>
+    </div>
 
-    <section>
+    <div class="service-box">
       <h2>Customized Nutrition Planning</h2>
-      <p>Your body deserves to be nourished with intention. I create customized nutrition plans that go beyond calorie counts and strict rules. Instead, I focus on balanced, realistic eating habits that align with your lifestyle, health goals, and cultural preferences. Food is not just fuel—it’s joy, comfort, and power. My job is to help you enjoy it with awareness and confidence.</p>
-      <p>Whether you’re aiming for fat loss, muscle gain, improved digestion, or just healthier habits, I’ll help you build a positive relationship with food. We’ll design a plan that energizes your body without making you feel deprived. I’ll be there with constant support, guidance, and motivation every step of the way.</p>
-      <p>This isn’t about dieting. It’s about freedom—freedom to eat, move, and live without guilt or confusion. That’s the kind of nutrition plan I believe in. And with me, you’re not alone—you have a coach who listens, adapts, and celebrates your wins with you.</p>
-    </section>
+      <p>Fuel your lifestyle with a nutrition plan that’s customized just for you. No generic meal plans, no extreme diets — only thoughtful guidance that helps you eat well, feel energized, and stay consistent without giving up the food you love.</p>
+      <p>We’ll work together to understand your goals, your habits, your schedule, and even your cravings — then create a plan that is realistic, nourishing, and enjoyable. Whether your focus is weight loss, muscle tone, digestion, or balanced living, I’ll help you get there with smart, sustainable strategies.</p>
+      <p>My approach makes nutrition feel like self-care, not sacrifice. You’ll learn how to eat with awareness, love your meals, and see food as a tool for joy and well-being. With me, you’re never alone — I walk beside you every bite of the way.</p>
+    </div>
+
   </div>
 
   <footer>
