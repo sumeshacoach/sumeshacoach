@@ -4,13 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sumesha Wellness</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Montserrat', sans-serif;
       background: #f9f9f9;
       color: #333;
+      line-height: 1.6;
     }
     header {
       background: white;
@@ -18,7 +19,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 20px 60px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -33,9 +34,10 @@
       border-radius: 10px;
     }
     .logo h1 {
-      font-size: 30px;
-      font-weight: 700;
-      color: #333;
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      font-weight: 600;
+      color: #5C5470;
     }
     nav a {
       text-decoration: none;
@@ -66,7 +68,7 @@
       text-shadow: 1px 1px 3px #000;
     }
     .section {
-      padding: 80px 60px;
+      padding: 70px 60px;
       max-width: 1100px;
       margin: auto;
     }
@@ -110,24 +112,30 @@
     }
     .testimonials {
       display: flex;
-      gap: 30px;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: center;
+      gap: 30px;
     }
     .testimonial {
-      flex: 1 1 45%;
       background: #f1f1f1;
-      padding: 20px;
+      padding: 25px;
       border-radius: 8px;
+      width: 45%;
+      min-width: 280px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+    .testimonial p {
+      font-size: 16px;
     }
     .testimonial h4 {
       margin-top: 15px;
       font-weight: 600;
+      color: #5C5470;
     }
     .mission {
       background: #f8f8f8;
       text-align: center;
-      padding: 80px 60px;
+      padding: 60px 30px;
     }
     .mission p {
       max-width: 900px;
@@ -137,7 +145,7 @@
     }
     .call {
       text-align: center;
-      padding: 80px 0;
+      padding: 60px 20px;
     }
     .call a {
       display: inline-block;
@@ -155,7 +163,6 @@
       text-align: center;
       padding: 20px 0;
       font-size: 14px;
-      margin-top: 60px;
     }
     @media(max-width: 768px) {
       .services, .testimonials { flex-direction: column; align-items: center; }
@@ -211,7 +218,7 @@
 
   <section class="mission">
     <h2>Our Mission</h2>
-    <p>Our mission is to bring all aspects of transformation together—fitness, mental wellness, emotional clarity, and nutrition—into one complete plan that works for YOU. With over 1,500 international clients, we craft a roadmap to your healthiest, most empowered self.</p>
+    <p>Our mission is to bring all aspects of transformation together—fitness, mental wellness, emotional clarity, and nutrition—into one complete plan that works for YOU. With over 1,500 international clients, we craft a roadmap to your healthiest, most empowered self. We believe that sustainable change starts with support, strategy, and simplicity. This is what we promise to deliver at Sumesha Wellness.</p>
   </section>
 
   <section class="section">
@@ -224,6 +231,10 @@
       <div class="testimonial">
         <p>"My energy, mindset, and motivation have all improved. Coaching was transformative!"</p>
         <h4>– Sachin D.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Affordable, effective and incredibly supportive – I recommend this to everyone I know."</p>
+        <h4>– Ayesha K.</h4>
       </div>
     </div>
   </section>
