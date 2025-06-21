@@ -11,6 +11,7 @@
       font-family: 'Montserrat', sans-serif;
       background: #fff;
       color: #333;
+      line-height: 1.7;
     }
 
     header {
@@ -48,6 +49,11 @@
       margin-left: 30px;
       font-weight: 600;
       font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #5C5470;
     }
 
     .container {
@@ -58,21 +64,35 @@
 
     .container h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 30px;
+      font-size: 34px;
       color: #5C5470;
       margin-bottom: 10px;
+      text-align: center;
     }
 
-    p {
+    .intro, .pricing {
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+
+    .intro p, .pricing p {
       font-size: 17px;
-      margin-bottom: 20px;
       text-align: justify;
+      margin-bottom: 15px;
+    }
+
+    .pricing h3 {
+      font-size: 24px;
+      color: #5C5470;
+      margin-bottom: 15px;
+      text-align: center;
     }
 
     iframe {
       width: 100%;
       height: 1200px;
       border: none;
+      margin-top: 20px;
     }
 
     footer {
@@ -98,6 +118,13 @@
         margin-right: 15px;
         display: inline-block;
       }
+      .logo img {
+        height: 50px;
+        width: 50px;
+      }
+      .logo h1 {
+        font-size: 28px;
+      }
     }
   </style>
 </head>
@@ -119,11 +146,17 @@
 
   <div class="container">
     <h2>Book a Session</h2>
-    <p>Please fill out the form below to book your personalized session. You’ll receive an email confirmation and a Google Meet invite once your booking is complete. I look forward to helping you achieve your ideal lifestyle!</p>
 
-    <h3 style="margin-top: 20px; font-size: 22px; color: #5C5470;">Session Pricing</h3>
-    <p>At Sumesha Wellness, we believe wellness should be accessible to everyone. All our sessions are affordably priced and designed to suit individual needs. Pricing varies based on the type of coaching or therapy and will be discussed after your first consultation.</p>
-    <p><strong>There is no charge</strong> for booking a session or having your first discussion with us. This allows us to understand your goals and recommend a plan that fits you best—before any commitment is made.</p>
+    <div class="intro">
+      <p>Please fill out the form below to book your personalized session. You’ll receive an email confirmation and a Google Meet invite once your booking is complete. I look forward to helping you achieve your ideal lifestyle!</p>
+    </div>
+
+    <div class="pricing">
+      <h3>Session Pricing</h3>
+      <p>At <strong>Sumesha Wellness</strong>, we believe wellness should be accessible to everyone. All our sessions are affordably priced and tailored to individual needs.</p>
+      <p>Prices vary based on the type of coaching or therapy and will be discussed after your first consultation. <strong>Your first discussion is completely free</strong> and comes with no obligations or booking charges.</p>
+      <p>This way, we ensure you're choosing the right program confidently and comfortably.</p>
+    </div>
 
     <!-- Embedded Google Form -->
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeptSY4_AennCuE91ZhgaCQiT2TkzBgEZILA4dlwDNNJbLYfQ/viewform?embedded=true">Loading…</iframe>
