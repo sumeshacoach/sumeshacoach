@@ -4,192 +4,228 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sumesha Wellness</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
   <style>
     body {
-      font-family: 'Inter', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #fdfdfd;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f7f7;
       color: #333;
     }
-    nav {
-      background: white;
-      display: flex;
-      justify-content: space-between;
-      padding: 15px 30px;
-      align-items: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    .logo-container {
-      display: flex;
-      align-items: center;
-    }
-    .logo-container img {
-      height: 40px;
-      margin-right: 12px;
-    }
-    .logo-container span {
-      font-size: 24px;
-      font-weight: 700;
-      color: #333;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      margin: 0;
-      padding: 0;
-    }
-    nav ul li {
-      margin-left: 25px;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 600;
-    }
+
     header {
-      background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
-        url('https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+      background-color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 50px;
+      background: none;
+    }
+
+    .logo h1 {
+      font-size: 28px;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      color: #444;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1950&q=80') center center/cover no-repeat;
+      height: 85vh;
       color: white;
-      padding: 100px 20px 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
+      padding: 20px;
     }
-    header h2 {
-      font-size: 48px;
+
+    .hero h2 {
+      font-size: 42px;
       margin-bottom: 15px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
     }
-    header p {
+
+    .hero p {
       font-size: 20px;
       max-width: 700px;
-      margin: auto;
+      margin-bottom: 25px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
     }
-    section {
-      padding: 60px 30px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    h3 {
-      text-align: center;
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-    .services, .testimonials {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .service, .testimonial {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 3px 15px rgba(0,0,0,0.05);
-      width: 300px;
-    }
-    .service img {
-      width: 100%;
-      height: 170px;
-      object-fit: cover;
-      border-radius: 5px;
-    }
-    .cta {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .cta button {
+
+    .hero button {
       padding: 12px 28px;
+      background-color: #555;
+      color: #fff;
       font-size: 16px;
-      background-color: #444;
-      color: white;
       border: none;
       border-radius: 5px;
       cursor: pointer;
     }
+
+    section {
+      padding: 60px 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .services {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .service {
+      flex: 1;
+      min-width: 300px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .service img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .quote {
+      font-style: italic;
+      text-align: center;
+      margin-top: 20px;
+      background-color: #eef0f4;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .mission {
+      text-align: center;
+    }
+
+    .mission p {
+      max-width: 900px;
+      margin: 20px auto 0;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .cta {
+      text-align: center;
+    }
+
+    .cta button {
+      padding: 12px 28px;
+      background-color: #4d4d4d;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
     footer {
-      background: #222;
+      background-color: #333;
       color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 60px;
+      font-size: 14px;
+    }
+
+    @media(max-width: 768px) {
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
 
-  <nav>
-    <div class="logo-container">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/480px-No_image_available.svg.png" alt="Sumesha Logo">
-      <span>Sumesha</span>
-    </div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="book.html">Book</a></li>
-    </ul>
-  </nav>
-
   <header>
-    <h2>Transform Your Life with Sumesha</h2>
-    <p>Where fitness, therapy, and wellness come together to reshape your lifestyle into something powerful, sustainable, and joyful.</p>
+    <div class="logo">
+      <img src="logo.png" alt="Logo" />
+      <h1>Sumesha</h1>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#mission">Mission</a>
+      <a href="#book">Book</a>
+    </nav>
   </header>
 
-  <section>
-    <h3>Why Choose Sumesha?</h3>
-    <p style="text-align: center; max-width: 750px; margin: auto;">
-      With 1500+ international clients, Sumesha Wellness empowers people of all ages to achieve balance through emotional, physical, and mental health — all at an affordable price.
-    </p>
-  </section>
+  <div class="hero">
+    <h2>Change Your Lifestyle with Sumesha</h2>
+    <p>Personalized coaching to transform your body, mind, and life — at your own pace.</p>
+    <button onclick="window.location.href='#book'">Book Now</button>
+  </div>
 
-  <section>
+  <section id="services">
     <h3>Our Services</h3>
     <div class="services">
       <div class="service">
-        <img src="https://images.unsplash.com/photo-1583454110551-21df2a9c8eaf?auto=format&fit=crop&w=870&q=80" alt="1-on-1 Training"/>
+        <img src="service_image_1.jpg" alt="1-on-1 Training">
         <h4>1-on-1 Training</h4>
-        <p>Personal coaching designed to help you build strength, improve endurance, and stay motivated with customized workout routines.</p>
+        <p>Enhance fitness, stamina, and motivation with a certified coach. Suitable for all levels.</p>
       </div>
       <div class="service">
-        <img src="https://images.unsplash.com/photo-1613982732618-f94b3a6fdd48?auto=format&fit=crop&w=870&q=80" alt="Online Therapy"/>
+        <img src="service_image_2.jpg" alt="Online Therapy">
         <h4>Online Therapy</h4>
-        <p>Confidential, supportive sessions to help manage stress, relationships, and emotional well-being through structured guidance.</p>
+        <p>Manage stress, relationships, and inner clarity with supportive private video sessions.</p>
       </div>
       <div class="service">
-        <img src="https://images.unsplash.com/photo-1510626176961-4bfb7f1f3b41?auto=format&fit=crop&w=870&q=80" alt="Nutrition Planning"/>
+        <img src="service_image_3.jpg" alt="Nutrition Planning">
         <h4>Nutrition Planning</h4>
-        <p>Holistic nutrition plans based on your lifestyle and goals. No crash diets — just balanced eating that fits you.</p>
+        <p>Healthy food guidance tailored to your goals. Balanced plans for lasting results.</p>
       </div>
     </div>
   </section>
 
-  <section>
-    <h3>Client Testimonials</h3>
-    <div class="testimonials">
-      <div class="testimonial"><p>"I saw major improvements both mentally and physically within a month. Life-changing support!" <br>– Krisha M.</p></div>
-      <div class="testimonial"><p>"Eesha really knows how to motivate and guide. She’s one of a kind!" <br>– Aditi S.</p></div>
-      <div class="testimonial"><p>"Highly professional and heart-centered coaching. Forever grateful!" <br>– Nikhil R.</p></div>
-    </div>
+  <section class="quote">
+    <p>“Finally, a program that understood me. Simple, effective, and truly supportive.”<br>— Aditi S.</p>
   </section>
 
-  <section>
-    <h3>Our Mission</h3>
-    <p style="text-align: center; max-width: 800px; margin: auto;">
-      At Sumesha Wellness, our mission is to simplify the journey to health by combining every essential element — fitness, mental clarity, therapy, and nutrition — into one structured yet flexible system. We believe that achieving your dream lifestyle doesn’t require extreme changes, but the right plan that fits YOU. Every person is unique, and our programs are built to honor that uniqueness while helping you thrive.
-    </p>
+  <section id="mission" class="mission">
+    <h3>Why Choose Sumesha?</h3>
+    <p>With 1500+ international clients and years of expertise, our mission is to combine every key element — physical fitness, mental clarity, emotional healing, and nutrition — to craft a lifestyle plan that's not only effective, but sustainable for real people in real life. Sumesha Wellness is a movement to help you reach your fullest potential, one day at a time.</p>
   </section>
 
-  <section class="cta">
+  <section class="cta" id="book">
     <h3>Start Your Journey Today</h3>
-    <p>Book a session and take the first step toward your healthiest, happiest self.</p>
-    <a href="book.html"><button>Book Now</button></a>
+    <p>Book a session and take the first step toward a healthier, more fulfilled life.</p>
+    <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeptSY4_AennCuE91ZhgaCQiT2TkzBgEZILA4dlwDNNJbLYfQ/viewform?usp=sf_link'">Book Now</button>
   </section>
 
   <footer>
-    <p>&copy; 2025 Sumesha Wellness. All rights reserved.</p>
+    © 2025 Sumesha Wellness. All rights reserved.
   </footer>
 
 </body>
